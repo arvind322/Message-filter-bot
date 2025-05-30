@@ -1,0 +1,11 @@
+android {
+    compileSdkVersion 30
+
+    defaultConfig {
+        applicationId "com.example.milkcalculator"
+        minSdkVersion 21
+        targetSdkVersion 30
+        versionCode 11
+        versionName "2.0"
+    }
+}
