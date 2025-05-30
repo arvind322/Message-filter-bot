@@ -1,15 +1,21 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.milkcalculator">
 
+    <!-- SDK version added -->
+    <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="30" />
+
     <application
         android:label="Milk Calculator"
         android:theme="@android:style/Theme.Material.Light">
+
         <activity android:name=".MainActivity"
             android:label="Milk Calculator">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
+
         </activity>
     </application>
 </manifest>
