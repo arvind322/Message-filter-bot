@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout 
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView android:text="Morning"
+            android:textSize="18sp" />
+
+        <EditText android:id="@+id/milk_morning" android:hint="Milk" android:inputType="numberDecimal"/>
+        <EditText android:id="@+id/fat_morning" android:hint="Fat" android:inputType="numberDecimal"/>
+        <EditText android:id="@+id/rate_morning" android:hint="Fat Rate" android:inputType="numberDecimal"/>
+
+        <Button android:text="Calculate Morning Total" android:onClick="calculateMorning"/>
+
+        <TextView android:id="@+id/total_morning" android:text="Morning Total: ₹0"/>
+
+        <View android:layout_height="1dp" android:background="#ccc" android:layout_marginTop="16dp"/>
+
+        <TextView android:text="Evening"
+            android:textSize="18sp" android:layout_marginTop="16dp"/>
+
+        <EditText android:id="@+id/milk_evening" android:hint="Milk" android:inputType="numberDecimal"/>
+        <EditText android:id="@+id/fat_evening" android:hint="Fat" android:inputType="numberDecimal"/>
+        <EditText android:id="@+id/rate_evening" android:hint="Fat Rate" android:inputType="numberDecimal"/>
+
+        <Button android:text="Calculate Evening Total" android:onClick="calculateEvening"/>
+
+        <TextView android:id="@+id/total_evening" android:text="Evening Total: ₹0"/>
+
+        <Button android:text="Final Total" android:onClick="calculateFinal" android:layout_marginTop="16dp"/>
+        <TextView android:id="@+id/final_total" android:text="Total: ₹0"/>
+
+    </LinearLayout>
+</ScrollView>
